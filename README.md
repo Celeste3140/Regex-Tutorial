@@ -62,15 +62,28 @@ OR Operators (|) require the string to meet all requirements in the pattern. For
 ### Character Classes
 Character classes matches a single character out of several ones. 
 
-. mactches any single character 
+* "." matches any single character 
 
-\d matches any numerical digit, same as [0-9]
+* "\d" matches any numerical digit, same as [0-9]
 
-\s matches any whitespace character 
+* "\s" matches any whitespace character 
 
-\w any numerical or alpanumeric character including "_"
+* "\w" any numerical or alpanumeric character including "_"
 
 ### Flags
+Flags changes regex searches by changing the default searching behavior. Flags are added at the end of an expression and define how these searches will be changes. 
+
+* "g" - Global: search for all occurances 
+
+* "i" - 
+
+* "s" - 
+
+* "m" - 
+
+* "y" - 
+
+* "u" - 
 
 ### Grouping and Capturing
 
@@ -83,6 +96,10 @@ For example we have this bracket expression [jkl], it will look for a string tha
 Another example, we have this bracket expression [3-5], it will search for any number between 3-5. 
 
 ### Greedy and Lazy Match
+* Greedy searches will search all and every occurances. A negative to this is that a greedy search will result in a large group of results. Greedy searches is usually the default behaviour of regular expression. 
+
+* Lazy Matches outputs a much smaller match group. The matching is repeated until condition is satisfied. Lazy matches can be used by adding "?" at the end of the expression. 
+
 
 ### Boundaries
 
