@@ -49,6 +49,12 @@ $ targets string that matches characters in the end of string
 
 ### Bracket Expressions
 
+Bracket Expressions [] represent a series of characters that are going to be match. Any single character inside the bracket expression is matched with the target string.
+
+For example we have this bracket expression [jkl], it will look for a string that includes any of those letters in the bracket expression. 
+
+Another example, we have this bracket expression [3-5], it will search for any number between 3-5. 
+
 ### Greedy and Lazy Match
 
 ### Boundaries
