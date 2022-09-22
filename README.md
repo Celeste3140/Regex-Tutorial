@@ -28,8 +28,14 @@ Here is an expression that is used to verify an email address:
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-
+Regex expressions are made up of components that are also referred to as atoms. Some of these components include single characters such ()?+$ and / which for example is used to wrap the expression in. Other stype of components include bracket expressions, anchors, control characters and etc. 
 ### Anchors
+Anchors are components that match an empty substring.
+^ and $ are considered anchors.
+
+^ targets string that matches characters in the beginning of string
+
+$ targets string that matches characters in the end of string
 
 ### Quantifiers
 
