@@ -121,5 +121,15 @@ C(?=B) match for C only if followed by B
 (?<=B)C match for C only if there's B before
 
 ## Author
+Celeste Baltazar
 
 [GitHub Profile](https://github.com/Celeste3140)
+
+## Sources and References
+ * https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial
+
+ * (WCUPA) https://www.cs.wcupa.edu/rkline/index/regular-expressions.html
+
+* (javascript.info) https://javascript.info/regular-expressions
+
+* (Rexegg) https://www.rexegg.com/regex-boundaries.html
