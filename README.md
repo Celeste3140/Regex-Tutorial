@@ -100,8 +100,13 @@ Another example, we have this bracket expression [3-5], it will search for any n
 
 * Lazy Matches outputs a much smaller match group. The matching is repeated until condition is satisfied. Lazy matches can be used by adding "?" at the end of the expression. 
 
-
 ### Boundaries
+Boundaries (\b) in regex is an anchor and matches positions for a side or whole word in a string or word character. For example:
+\bmat\b would only match the word mat so words such as maths or mates would not work
+
+\bmat with just one boundary, we can match mat in words such as matte or mater
+
+mat\b with the boundary just at the end we can match mat in words such as format or hazmat 
 
 ### Back-references
 
