@@ -41,20 +41,34 @@ $ targets string that matches characters in the end of string
 Quantifiers helps regex matches by setting limits to the searches. Quantifiers are greedy so they indicate that the match be maximal. A "?" can be added to the quantifier to make it non-greedy (can also be called lazy) and changes the match to be more minimal. 
 Here are some quantifiers: 
 
-+ matches 1 or more occurrences of the pattern
+"+" matches 1 or more occurrences of the pattern
 
-? matches 0 or 1 occurrences of the pattern 
+"?" matches 0 or 1 occurrences of the pattern 
 
-* matches 0 or more occurrences of the pattern
+"*" matches 0 or more occurrences of the pattern
 
 {} can also set limits for matches. For example:
-    - {6} indicates exactly 6 occurrences of the pattern will be match. 
-    - {6, } indicates that at least 6 occurrences of the pattern will be match.
-    - {6, 10} indicates between 6 and 10 occurences of the pattern will be match. 
+* {6} indicates exactly 6 occurrences of the pattern will be match. 
+* {6, } indicates that at least 6 occurrences of the pattern will be match.
+* {6, 10} indicates between 6 and 10 occurences of the pattern will be match. 
 
 ### OR Operator
+OR Operators (|) require the string to meet all requirements in the pattern. For example: 
+
+* (123) : (abc) we have this expression that will match each character individually 
+
+* (1|2|3) : (a|b|c) using the OR operator this expression match every character 
 
 ### Character Classes
+Character classes matches a single character out of several ones. 
+
+. mactches any single character 
+
+\d matches any numerical digit, same as [0-9]
+
+\s matches any whitespace character 
+
+\w any numerical or alpanumeric character including "_"
 
 ### Flags
 
