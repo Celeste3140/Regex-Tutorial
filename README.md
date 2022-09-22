@@ -7,11 +7,8 @@ This is a short tutorial on regular expressions (Regex) as a programming languag
 Regular expressions (Regex) is an expression that uses various different kind of symbols the represent charcters or patterns in text. Regex can be used in almost all  programming languages used today and serves as an efficient search tool for programmers. Regex uses literal characters to represent numbers or letters and meta charcters to indicate a pattern such as positions, quantifers and classes.
 
 For example: 
-Here is an expression that is used to verify an email address:
+Here is a regular expression that is used to verify an email address:
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-
-. = any character
-* = 0 or more
 
 ## Table of Contents
 
@@ -104,14 +101,21 @@ Another example, we have this bracket expression [3-5], it will search for any n
 Boundaries (\b) in regex is an anchor and matches positions for a side or whole word in a string or word character. For example:
 \bmat\b would only match the word mat so words such as maths or mates would not work
 
-\bmat with just one boundary, we can match mat in words such as matte or mater
+\bmat with just one boundary in the front, we can match mat in words such as matte or mater
 
 mat\b with the boundary just at the end we can match mat in words such as format or hazmat 
 
 ### Back-references
+Back-refrences in regex allows one to find repeated occurances of a character in a string. Such as, if we match an occurance in a group we can use back-referencing to match succeeding occurrences in a string. Back-refrences use "\1" to refer back to a previous part of the expression.
 
 ### Look-ahead and Look-behind
+Look-ahead and look-behind is also referend to as "lookaround". This a specific syntax that matches patterns that are before or not followed by another pattern.
 
+*Look-ahead: 
+C(?=B) match for C only if followed by B
+
+*Look-behind:
+(?<=B)C match for C only if there's B before 
 ## Author
 
 [GitHub Profile](https://github.com/Celeste3140)
