@@ -85,6 +85,7 @@ Flags changes regex searches by changing the default searching behavior. Flags a
 * "u" - Unicode: assumes test string as code points, this flag is used with characters outside normal UTF-16 character set range
 
 ### Grouping and Capturing
+Grouping and capturing groups matches multiple characters as a single unit, doing so by putting desired group in a set of parentheses. This is useful when we need to match only a portion of the search.
 
 ### Bracket Expressions
 
